@@ -1,22 +1,19 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: helvetica;
 }
 
 section#banner{
 	width: 100%;
-	background-image: url(../pictures/hk.jpg);
-	background-attachment: contain;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 header{
 	position: fixed;
 	width: 100%;
 	height: 70px;
-	background-color: red;
+	background-color: transparent;
+	/*background-color: red;*/
+	/*-webkit-transition: background-color .5s;*/
 }
 
 nav{
@@ -24,7 +21,7 @@ nav{
 	margin: auto;
 	margin-top: 15px;
 	height: 40px;
-	background-color: green;
+	/*background-color: green;*/
 	-webkit-transition:margin-left .5s;
 }
 
@@ -37,7 +34,16 @@ ul{
 ul li{
 	float: left;
 	margin: 10px;
-	padding: 2px;
+	padding: 5px;
+	padding-top: 40px;
+	/*color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 130%;*/
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	background-color: transparent;
+	color: #333;
+	font-size: 130%;
 }
 
 ul a{
@@ -50,11 +56,444 @@ img#logo{
 	display: block;
 	margin-left: 30px;
 	margin-right: 30px;
-	margin-top: 50px;
-	-webkit-transition: width .5s, height .5s, margin-right.5s;
+	margin-top: 60px;
+	-webkit-transition: width .5s, height .5s, margin-right.5s, margin-top .5s;
 }
 
 #body{
 	width: 100%;
-	height: 500px;
+	height: 3500px;
+	color: black;
 }
+
+/*End of title page*/
+
+/*Menu bar*/
+
+/*.menu {
+	background: #202024 repeat;
+	left: -285px;
+	height: 100%;
+	position: fixed;
+	width: 285px;
+}
+
+.menu ul{
+	border-top: 1px solid #333;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li{
+	border-bottom: 1px solid #333;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 45px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-top: 3px;
+}
+
+.menu a{
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.icon-close{
+	cursor: pointer;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.icon-menu{
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-top: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.icon-menu i {
+	margin-right: 5px;
+}*/
+
+
+/*Content*/
+
+/*.content {
+	height: 600px;
+	background-color: white;
+}*/
+
+/*About*/
+
+.about{
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+	opacity: 0;
+}
+
+.about h2{
+	transition: all 0.8s ease;
+	font-size: 60px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	/*font-family: "Times New Roman", Times, serif;
+	font-family: helvetica;*/
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 0 0 30px 150px;
+	-webkit-transition:margin-left .5s;
+}
+
+.about p{
+	transition: all 0.8s ease;
+	font-size: 30px;
+	font-weight: 100;
+	z-index: 0;
+	position: relative;
+	/*font-family: "Times New Roman", Times, serif;
+	font-family: helvetica;*/
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 0 830px 0 150px;
+	-webkit-transition:margin-left .5s;
+}
+
+.about pre{
+	transition: all 0.8s ease;
+	font-size: 30px;
+	font-weight: 100;
+	z-index: 0;
+	position: relative;
+	/*font-family: "Times New Roman", Times, serif;
+	font-family: helvetica;*/
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 0 830px 0 150px;
+	-webkit-transition:margin-left .5s;
+}
+
+#picture0{
+	position: absolute;
+	right: 150px;
+	top: 0px;
+	z-index: -1;
+	opacity: 0.8;
+}
+
+/*.about.hidden h2{
+	opacity: 0;
+	transform: translate3d(0px, 0px, 400px) rotateY(-40deg);
+}
+
+.about.hidden p{
+	opacity: 0;
+	transform: translate3d(0px, 0px, 400px) rotateY(40deg);
+}*/
+
+/*Padding*/
+
+.padding{
+	height: 320px;
+}
+
+/*Experience*/
+
+.content2{
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+	opacity: 0;
+}
+
+.content2 h3{
+	transition: all 0.8s ease;
+	font-size: 60px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 0 0 30px 150px;
+}
+
+.content2 p{
+	transition: all 0.8s ease;
+	font-size: 30px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 0 830px 0 150px;
+}
+
+#picture1{
+	position: absolute;
+	right: 150px;
+	top: 60px;
+	z-index: -1;
+	opacity: 0.8;
+	width: 600px;
+	height: 360px;
+}
+
+/*Projects*/
+
+.content3{
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 670px;
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+	opacity: 0;
+}
+
+.content3 h4{
+	transition: all 0.8s ease;
+	font-size: 70px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 0 0 30px 150px;
+}
+
+#thumbnail1{
+	position: absolute;
+	z-index: -1;
+	opacity: 0.8;
+	top: 120px;
+	left: 370px;
+	outline-style: solid;
+	outline-color: #333;
+}
+
+#thumbnail2{
+	position: absolute;
+	z-index: -1;
+	opacity: 0.8;
+	top: 120px;
+	right: 400px;
+	outline-style: solid;
+	outline-color: #333;
+}
+
+.thumbnailDescription1 p{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 600;
+	z-index: 0;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	top: 660px;
+	left: 490px;
+	text-align: center;
+}
+
+.thumbnailDescription1 pre{
+	position: absolute;
+	font-size: 20px;
+	font-weight: 300;
+	z-index: 0;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	top: 720px;
+	left: 190px;
+	text-align: center;
+}
+
+.thumbnailDescription2 p{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 600;
+	z-index: 0;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	top: 660px;
+	right: 450px;
+	text-align: center;
+}
+
+.thumbnailDescription2 pre{
+	position: absolute;
+	font-size: 20px;
+	font-weight: 300;
+	z-index: 0;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	top: 720px;
+	right: 390px;
+	text-align: center;
+}
+
+
+.padding2{
+	height: 650px;
+
+}
+
+/*Nature*/
+
+
+
+.space{
+	text-align: center;
+	font-size: 575%;
+	color: #4A4444;
+	text-transform: uppercase;
+	letter-spacing: 1%;
+	margin: 45%;
+}
+
+
+/*Parallax*/
+
+/*.parallax{
+	background: url("../pictures/nature.jpg") repeat fixed 100%;
+	width: 100%;
+}
+
+.parallax-inner{
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+
+.content4{
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+}
+
+.content4 h5{
+	transition: all 0.8s ease;
+	font-size: 70px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	font-family: "Times New Roman", Times, serif;
+	padding: 0 0 30px 150px;
+}*/
+
+.swag{
+	background: url('pictures/m.jpg') no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+.swag p{
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	padding-bottom: -100px;
+	font-weight: 100;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	z-index: -1;
+}
+
+#author{
+	font-size: 20px;
+	text-align: center;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	z-index: -1;
+
+}
+
+.text-center{
+	text-align: center;
+}
+
+.row{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.col-md-8{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.wp3{
+	visibility: hidden;
+}
+
+.animated{
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.section-padding{
+	height: 750px;
+	width: 100%;
+	margin-top: -900px;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+}
+
+.padding3{
+	height: 1000px;
+	width: 100%;
+	position: absolute;
+	background-color: white;
+	z-index: 1;
+	margin-top: -1500px;
+}
+
+/*Talk to me*/
+
+h6{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 200px;
+}
+
+#emailPadding{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	width: 100%;
+	height: 300px;
+	background-color: #333;
+	margin-top: -200px;
+	margin-bottom: -100px;
+	color: green;
+}
+
+
+.content4 a{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	z-index: 0;
+	position: relative;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	padding: 130px;
+	color: green;
+}
+

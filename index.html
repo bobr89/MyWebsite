@@ -1,36 +1,211 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
+	<head>
 		<meta charset="UTF-8">
 		<title>Website</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="index_style.css">
-		<script type="text/javascript" src="script.js"></script>
-		<style>
-</head>
+		<!-- Latest compiled and minified CSS -->
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
 
 <body>
 	<header>
 		<nav>
 			<ul>
-				<a href='http://www.google.com'><li>About</li></a>
-				<a href='http://www.google.com'><li>Experience</li></a>
-				<a href='http://www.google.com'><li>Projects</li></a>
-			</ul>
+				<a href='#content1'><li>About</li></a>
+				<a href='#content2'><li>Experience</li></a>
+				<a href='#content3'><li>Projects</li></a>
+			</ul> 
 
 				<img id='logo' src='pictures/logo.png'>
 
 			<ul>
-				<a href='http://www.google.com'><li>Experience</li></a>
-				<a href='http://www.google.com'><li>Contact</li></a>
-				<a href='http://www.google.com'><li>Interests</li></a>
+				<a href='https://ca.linkedin.com/in/brian-king-hei-chan-138b88112'><li>LinkedIn</li></a>
+				<a href='https://github.com/bobr89'><li>GitHub</li></a>
+				<a href='#content4'><li>Get In Touch</li></a>
 			</ul>
 		</nav>
 	</header>
 
 	<section id='banner'></section>
 
-	<section id='body'></section>
+	<div class="menu">
+
+
+	</div>
+
+	<section id='body'>
+
+		<!--<div class="about">-->
+		<div class="about hidden" id="content1">
+
+			<h2>Nice to meet you</h2>
+       	    <pre>I love coding and I am passion in what I do. 
+I studies computer engineering in University of Waterloo. 
+I also love talking to people!</pre>
+       	    <br></br>
+       	    <p>In the last coop term, I worked for Agriculture and Agri-Food Canada where I developed a statistic anaylsis program which hugely increase the efficiency of the position.</p>
+
+       	    <img id='picture0' src='pictures/picture0.jpg'>
+		</div>
+
+		<div class="padding"></div>
+
+		<div class="content2" id="content2">
+
+			<h3>Experience</h3>
+			<p>Agriculture and Agri-Food Canada</p>
+			<p>Web Statistics Specialist - Web Development</p>
+			<br></br>
+			<p>- Generate complex reports by IBM Unica's NetInsight base on web log files</p>
+			<p>- Keep website's data tracking up to date, ensuring accuracy of data set in web server</p>
+			<p>- Developed a statistic analysis program from C++ which hugely increased work effciency</p> 
+
+			<img id='picture1' src='pictures/flag.png'>
+		</div>
+
+		<div class="padding"></div>
+
+		<div class="content3" id="content3">
+
+			<h4>Projects</h4>	
+
+			<div class="row">
+				
+				<a href="#" id='thumbnail1'>
+					<img src='pictures/thumbnail1.png' width="500px" height="500px">
+				</a>
+
+				<div class="thumbnailDescription1">
+					<p>PERSONAL WEBSITE</p>
+					<pre>
+						You are on it now.
+						Portfolio containing my experience, 
+						project and interests!
+					</pre>
+
+				</div>
+
+				<a href='#' id='thumbnail2'>
+					<img src='pictures/thumbnail2.png' width="500px" height="500px">
+				</a>
+
+				<div class="thumbnailDescription2">
+					<p>STATS ANALYSIS ALGORITHM</p>
+					<pre>
+						A dynamically analysis statistic program written during 
+						coop term as Web Analysis Specialist. 
+						Obtain knowledge from UWaterloo's ECE150 course.
+					</pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="padding2"></div>
+
+		<section class="swag text-center">
+			<div class="row">
+				<div class="col-md-8 col-md-off-2 animated fadeInDown">
+					<p>Do not pray for an easy life,</p> 
+					<p>pray for the strength to endure a difficult one.</p>
+					<p id="author">Bruce Lee</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="content4" id="content4">
+
+			<h6>DROP ME A LINE</h6>
+
+			<div class="emailPadding" id="emailPadding">
+
+			<a href="brianchanuniversity@gmail.com">EMAIL ME NOW</a>
+			<p>Want to have a chat? Don't hesitate to reach out</p>
+		    </div>
+
+			
+		</div> 
+
+	</section>
+
+	<!--Script-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#banner").css({"height":$(window).height() + "px"});
+
+			var flag = false;
+			var scroll;
+
+			$(window).scroll(function(){
+				scroll = $(window).scrollTop();
+
+					if(scroll > 40){
+						if(!flag){
+						$("#logo").css({"margin-top": "-5px", "width": "200px", "height": "200px"});
+
+						/*$("header").css({"background-color": "#3C3C3C"});*/
+						flag = true;
+						}
+					}else {
+						if(flag){
+						$("#logo").css({"margin-top": "70px", "width": "849px", "height": "849px"});
+
+						/*$("header").css({"background-color": "transparent"});*/
+						flag = false;
+					}
+				}
+			});
+
+
+			var scroll1; 
+			$(window).scroll(function(){
+				scroll1 = $(window).scrollTop();
+
+					if(scroll1 > 450){
+						$(".about").animate({'opacity':'1'});
+					}
+			});
+
+			var scroll2;
+			$(window).scroll(function(){
+				scroll2 = $(window).scrollTop();
+
+					if(scroll2 > 950){
+						$(".content2").animate({'opacity':'1'});
+					}
+			});
+
+			var scroll3;
+			$(window).scroll(function(){
+				scroll3 = $(window).scrollTop();
+
+					if(scroll3 > 1650){
+						$(".content3").animate({'opacity':'1'});
+					}
+			});
+
+			var scroll4;
+			$(window).scroll(function(){
+				scroll4 = $(window).scrollTop();
+
+					if(scroll4 > 1950){
+						$(".content2").animate({'opacity':'1'});
+					}
+			});
+
+		});
+
+	</script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	</body>
 </html>
