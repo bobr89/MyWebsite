@@ -3,14 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Website</title>
-		<link rel="stylesheet" href="index_style.css">
+		<link rel="stylesheet" href="style/index_style.css">
 		<!-- Latest compiled and minified CSS -->
-		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	</head>
-
 <body>
 	<header>
 		<nav>
@@ -20,7 +19,7 @@
 				<a href='#content3'><li>Projects</li></a>
 			</ul> 
 
-				<img id='logo' src='pictures/logo.png'>
+				<img id='logo' src='pictures/l.png'>
 
 			<ul>
 				<a href='https://ca.linkedin.com/in/brian-king-hei-chan-138b88112'><li>LinkedIn</li></a>
@@ -30,12 +29,13 @@
 		</nav>
 	</header>
 
-	<section id='banner'></section>
+	<section id='banner' class="banner">
 
-	<div class="menu">
-
+	<div id="container" class="container">
 
 	</div>
+
+	</section>
 
 	<section id='body'>
 
@@ -116,18 +116,22 @@ I also love talking to people!</pre>
 			</div>
 		</section>
 
-		<div class="content4" id="content4">
+		<!--<div class="content4" id="content4">
 
 			<h6>DROP ME A LINE</h6>
 
 			<div class="emailPadding" id="emailPadding">
-
+			
 			<a href="brianchanuniversity@gmail.com">EMAIL ME NOW</a>
 			<p>Want to have a chat? Don't hesitate to reach out</p>
 		    </div>
+		</div>-->
 
-			
-		</div> 
+		<div class="contact" id="contact">
+				
+		</div>
+
+		<!--Squaresend-->
 
 	</section>
 
@@ -177,7 +181,7 @@ I also love talking to people!</pre>
 			$(window).scroll(function(){
 				scroll2 = $(window).scrollTop();
 
-					if(scroll2 > 950){
+					if(scroll2 > 1050){
 						$(".content2").animate({'opacity':'1'});
 					}
 			});
@@ -186,7 +190,7 @@ I also love talking to people!</pre>
 			$(window).scroll(function(){
 				scroll3 = $(window).scrollTop();
 
-					if(scroll3 > 1650){
+					if(scroll3 > 1750){
 						$(".content3").animate({'opacity':'1'});
 					}
 			});
