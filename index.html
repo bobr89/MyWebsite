@@ -5,7 +5,7 @@
 		<title>Website</title>
 		<link rel="stylesheet" href="style/index_style.css">
 		<!-- Latest compiled and minified CSS -->
-		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -73,7 +73,7 @@ I also love talking to people!</pre>
 
 			<h4>Projects</h4>	
 
-			<div class="row">
+			
 				
 				<a href="#" id='thumbnail1'>
 					<img src='pictures/thumbnail1.png' width="500px" height="500px">
@@ -101,20 +101,24 @@ I also love talking to people!</pre>
 						Obtain knowledge from UWaterloo's ECE150 course.
 					</pre>
 				</div>
-			</div>
+			
 		</div>
 
 		<div class="padding2"></div>
 
+		<div class="content4" id="content4">
+
 		<section class="swag text-center">
 			<div class="row">
-				<div class="col-md-8 col-md-off-2 animated fadeInDown">
+				<div class="col-md-8 col-md-off-2 animated fadeInDown pop">
 					<p>Do not pray for an easy life,</p> 
 					<p>pray for the strength to endure a difficult one.</p>
 					<p id="author">Bruce Lee</p>
 				</div>
 			</div>
 		</section>
+
+		</div>
 
 		<!--<div class="content4" id="content4">
 
@@ -128,6 +132,10 @@ I also love talking to people!</pre>
 		</div>-->
 
 		<div class="contact" id="contact">
+
+			<div class="col-md-12">
+				<a class="send" href="mailto:toyer889@gmail.com">EMAIL ME NOW</a>
+			</div>
 				
 		</div>
 
@@ -152,16 +160,18 @@ I also love talking to people!</pre>
 
 					if(scroll > 40){
 						if(!flag){
-						$("#logo").css({"margin-top": "-5px", "width": "200px", "height": "200px"});
+						$("#logo").css({"margin-top": "-27px", "width": "150px", "height": "150px"});
 
-						/*$("header").css({"background-color": "#3C3C3C"});*/
+						$("header").css({"background-color": "#3C3C3C"});
 						flag = true;
 						}
-					}else {
+					}
+
+					else {
 						if(flag){
 						$("#logo").css({"margin-top": "70px", "width": "849px", "height": "849px"});
 
-						/*$("header").css({"background-color": "transparent"});*/
+						$("header").css({"background-color": "transparent"});
 						flag = false;
 					}
 				}
@@ -190,18 +200,28 @@ I also love talking to people!</pre>
 			$(window).scroll(function(){
 				scroll3 = $(window).scrollTop();
 
-					if(scroll3 > 1750){
+					if(scroll3 > 1850){
 						$(".content3").animate({'opacity':'1'});
 					}
 			});
 
+			var flag1 = false;
 			var scroll4;
 			$(window).scroll(function(){
 				scroll4 = $(window).scrollTop();
 
-					if(scroll4 > 1950){
-						$(".content2").animate({'opacity':'1'});
+					if(scroll > 3250){
+						if(!flag1){
+						$("header").css({"background-color": "transparent"});
+						flag1 = true;
+						}
 					}
+					else {
+						if(flag1){
+						$("header").css({"background-color": "#3C3C3C"});
+						flag1 = false;
+					}
+				}
 			});
 
 		});
@@ -210,6 +230,7 @@ I also love talking to people!</pre>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="http://squaresend.com/squaresend.js"></script>
 
 	</body>
 </html>
